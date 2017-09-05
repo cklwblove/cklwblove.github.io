@@ -20,7 +20,7 @@
     <search-stock
       ref="searchStock"
       :api="api"
-      @selectStock="selectCurrentStock"
+      @selected="selectCurrentStock"
     ></search-stock>
   </div>
 
@@ -30,7 +30,6 @@
   <script src="vue-search-stock.min.js"></script>
 
   <script>
-    Vue.use(VueSearchStock);
     new Vue({
       el: '#app',
       data: {
